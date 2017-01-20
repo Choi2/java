@@ -1,3 +1,10 @@
+
+/*
+ *================== Second Question=================
+ * this code is made with "while" and "switch" function.Â  Â 
+ * @author SeongJinÂ *Â 
+ */
+
 import java.util.Scanner;
 
 public class second {
@@ -9,7 +16,7 @@ public class second {
 
 		while (true) {
 
-			System.out.println("¿øÇÏ½Ã´Â ±â´ÉÀ» ÀÔ·ÂÇÏ¼¼¿ä.(1~4)");
+			System.out.println("ì›í•˜ì‹œëŠ” ê¸°ëŠ¥ì„ ì…ë ¥í•˜ì„¸ìš”.(1~4)");
 
 			int num = input.nextInt();
 
@@ -24,7 +31,7 @@ public class second {
 				BMI();
 				break;
 			case 4:
-				System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+				System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 				System.exit(0);
 			}
 		}
@@ -34,13 +41,13 @@ public class second {
 	
 	private static void BMI() {
 		// TODO Auto-generated method stub
-		System.out.println("BMI¸¦ À§ÇØ Å°(cm)¿Í ¸ö¹«°Ô¸¦ ÀÔ·ÂÇÏ¼¼¿©??");
+		System.out.println("BMIë¥¼ ìœ„í•´ í‚¤(cm)ì™€ ëª¸ë¬´ê²Œë¥¼ ì…ë ¥í•˜ì„¸ì—¬??");
 		
 		double height = input.nextDouble();
 		int weight = input.nextInt();
 		
 		double bmi = (weight / ((height * height) / 10000));
-		System.out.println("BMIÀÇ °ªÀº? " + String.format("%.2f", bmi) + "ÀÔ´Ï´Ù.");
+		System.out.println("BMIì˜ ê°’ì€? " + String.format("%.2f", bmi) + "ì…ë‹ˆë‹¤.");
 
 	}
 	
@@ -49,16 +56,16 @@ public class second {
 
 	private static void drgree() {
 		// TODO Auto-generated method stub
-		System.out.println("¼·¾¾¸¦ ÀÔ·ÂÇÏ¼¼¿©?");
+		System.out.println("ì„­ì”¨ë¥¼ ì…ë ¥í•˜ì„¸ì—¬?");
 		int drgree = input.nextInt();
 		double changedDrgree = drgree * 1.8 + 32;
-		System.out.println("È­¾¾´Â? " + String.format("%.1f", changedDrgree));
+		System.out.println("í™”ì”¨ëŠ”? " + String.format("%.1f", changedDrgree));
 
 	}
 
 	private static void totalandAverage() {
 		// TODO Auto-generated method stub
-		System.out.println("Á¡¼ö ÀÏ·Ä·Î 5°³¸¦ ÀÔ·ÂÇÏ¼¼¿©?");
+		System.out.println("ì ìˆ˜ ì¼ë ¬ë¡œ 5ê°œë¥¼ ì…ë ¥í•˜ì„¸ì—¬?");
 		int[] num = new int[5];
 		int total = 0;
 
@@ -67,7 +74,7 @@ public class second {
 			total += num[i];
 		}
 
-		System.out.println("ÃÑÁ¡Àº " + total + " Æò±ÕÀº " + total / 5.0);
+		System.out.println("ì´ì ì€ " + total + " í‰ê· ì€ " + total / 5.0);
 
 	}
 
