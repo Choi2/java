@@ -1,9 +1,6 @@
 
-
-
-/**
- * for문을 이용해 출력하기
- * 
+/*
+ * this code is made with "for" function.  
  * @author SeongJin
  *
  */
