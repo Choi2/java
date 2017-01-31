@@ -29,8 +29,14 @@ public class Reservation {
 		char tempChar[] = temp.toCharArray();
 		
 		
-		if(tempChar[rowNum - 1] == '■' && isCancel) 
-			tempChar[rowNum - 1] = '☐';
+		if(tempChar[rowNum - 1] == '■')
+		{
+			if(isCancel)
+				tempChar[rowNum - 1] = '☐';
+			
+			else
+				System.out.println("이미 그 좌석은 예매하셨습니다.");
+		}
 		
 		else if(tempChar[rowNum - 1] == '☐' && isReserve)
 			tempChar[rowNum - 1] = '■';
