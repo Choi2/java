@@ -48,10 +48,7 @@ public class Reservation {
 	
 	}
 
-	public boolean isReserve() {return isReserve;}
 	public void setReserve(boolean isReserve) {this.isReserve = isReserve;}
-	
-	public boolean isCancel() {return isCancel;}
 	public void setCancel(boolean isCancel) {this.isCancel = isCancel;}
 	
 	

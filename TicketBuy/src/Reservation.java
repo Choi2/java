@@ -47,12 +47,12 @@ public void ReservationCancelation(int colNum, int rowNum) {
 		char tempChar[] = temp.toCharArray();
 		
 		
-		if(tempChar[rowNum - 1] == '■')
+		if(tempChar[rowNum - 1] == '■') //'예약'을 선택했지만,
 		{
-			if(isCancel)
+			if(isCancel) //유일하게 '취소' 할 때만 선택된 좌석만 바뀌게 되고
 				tempChar[rowNum - 1] = '☐';
 			
-			else
+			else //이미 선택을 했다면 다음과 같은 메시지를 나타나게 만들었다.
 				System.out.println("이미 그 좌석은 예매하셨습니다.");
 		}
 		
@@ -66,10 +66,8 @@ public void ReservationCancelation(int colNum, int rowNum) {
 	
 	}
 
-	public boolean isReserve() {return isReserve;}
+
 	public void setReserve(boolean isReserve) {this.isReserve = isReserve;}
-	
-	public boolean isCancel() {return isCancel;}
 	public void setCancel(boolean isCancel) {this.isCancel = isCancel;}
 	
 	
